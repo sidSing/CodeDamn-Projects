@@ -23,16 +23,15 @@
         />
 
         <nav id="nav-bar">
-          <a href="#" class="nav-link">TEST</a>
-          <a href="#" class="nav-link">TEST</a>
-          <a href="#" class="nav-link">Contact US</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#video" class="nav-link">Video</a>
+          <a href="#cta" class="nav-link">Contact US</a>
         </nav>
       </div>
     </header>
-
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
-        <h2 class="owner-name container">LOREM IPSUM</h2>
+        <h2 class="sub-heading container">LOREM IPSUM</h2>
         <h1 class="bussiness-name">Lorem ipsum dolor sit amet.</h1>
         <p class="about-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tempore
@@ -45,12 +44,35 @@
       </div>
     </section>
 
-    <main class="container">
+    <main id="video" class="container">
+      <p class="sub-heading video-heading">DOLOR SIT</p>
       <video
         id="video"
         src="https://www.w3schools.com/html/mov_bbb.mp4"
         controls
       ></video>
     </main>
+
+    <section id="cta" class="cta">
+      <div class="conatiner">
+        <p class="sub-heading">FORM</p>
+        <h2>Contact Us</h2>
+        <div class="form-div">
+          <form action="http://www.google.com" method="get" id="form">
+            <div class="email">
+              <input
+                type="email"
+                placeholder="Enter E-Mail"
+                id="email"
+                required
+              />
+            </div>
+            <div class="submit">
+              <input type="submit" value="Submit" id="submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

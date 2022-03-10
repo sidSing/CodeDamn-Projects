@@ -19,6 +19,7 @@
   --color5: #c3fae8;
   --color6: #e6fcf5;
   --color7: #63e6be;
+  --blue01: #e7f5ff;
 }
 
 * {
@@ -27,11 +28,26 @@
   padding: 0;
 }
 
+/* General */
+.sub-heading {
+  display: inline-block;
+  font-size: 1.6rem;
+  background-color: var(--color6);
+  color: var(--color2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.2rem;
+  font-weight: 700;
+  margin: 1.2rem;
+  margin: auto;
+  margin-bottom: 0.8rem;
+}
+
 body,
 html {
   font-family: "Ubuntu", sans-serif;
   font-size: 10px;
   background-color: var(--color6);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -45,6 +61,8 @@ a {
 }
 
 header {
+  position: sticky;
+  top: 0;
   padding: 0.8rem 2.4rem;
   background-color: var(--color6);
 }
@@ -86,8 +104,8 @@ header {
   height: 100vh;
   background: linear-gradient(
       180deg,
-      rgba(28, 127, 214, 0.52),
-      rgba(253, 125, 20, 0.726)
+      rgba(28, 127, 214, 0.5),
+      rgba(9, 146, 105, 0.3)
     ),
     url(https://images.unsplash.com/photo-1594310381486-59abdfe96b37?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=egor-myznik-y6M35M_UXtI-unsplash.jpg);
   background-position: center;
@@ -97,20 +115,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: #ffe8cc;
-}
-
-.owner-name {
-  display: inline-block;
-  font-size: 1.6rem;
-  background-color: #fff4e6;
-  color: #d9480f;
-  padding: 0.4rem 0.8rem;
-  border-radius: 1.2rem;
-  font-weight: 700;
-  margin: 1.2rem;
-  margin: auto;
-  margin-bottom: 0.8rem;
+  color: var(--color5);
 }
 
 .bussiness-name {
@@ -129,10 +134,83 @@ main {
   padding: 4.8rem 0 0 9.6rem;
   display: flex;
   flex-direction: column;
+  padding: 9.6rem 4.8rem;
 }
 
 #video {
-  height: 20rem;
+  height: 70rem;
   justify-self: center;
   align-self: center;
+}
+
+.video-heading {
+  margin-bottom: 2rem;
+  background-color: var(--color2);
+  color: var(--color6);
+  font-weight: 600;
+}
+
+.cta {
+  padding: 9.6rem;
+  background-color: var(--color2);
+}
+h2 {
+  text-align: left;
+  font-size: 5.2rem;
+  color: var(--color6);
+  margin-bottom: 9.6rem;
+}
+
+.form-div {
+  margin: 9.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#email {
+  padding: 0.8rem 3.2rem;
+  font-size: 3rem;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: var(--blue01);
+  border-radius: 120000000000000000000000px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.5), 0 0 0 0.5rem var(--color6);
+  color: var(--color1);
+  place-content: "Enter E-Mail";
+  margin-bottom: 4.8rem;
+  font-weight: 600;
+}
+
+#submit,
+#submit:hover {
+  display: block;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 3rem;
+  border: none;
+  border-radius: 1000000000px;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15), 0 0 0 0.5rem var(--blue01);
+  background: linear-gradient(
+    90deg,
+    rgba(28, 127, 214, 1),
+    rgba(9, 146, 105, 0.9)
+  );
+  padding: 1.2rem 2.4rem;
+  color: var(--blue01);
+  margin: auto;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+#submit:active,
+#submit:focus,
+#submit:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(9, 146, 105, 0.9),
+    rgba(28, 127, 214, 1)
+  );
 }
