@@ -1,0 +1,138 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+--- 02 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  --color1: #087f5b;
+  --color2: #099268;
+  --color3: #0ca678;
+  --color4: #96f2d7;
+  --color5: #c3fae8;
+  --color6: #e6fcf5;
+  --color7: #63e6be;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+  background-color: var(--color6);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0.8rem 2.4rem;
+  background-color: var(--color6);
+}
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-img {
+  width: 4rem;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--color2);
+  border-radius: 1.2rem;
+  color: var(--color4);
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: var(--color1);
+  color: var(--color7);
+}
+
+.about {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(28, 127, 214, 0.52),
+      rgba(253, 125, 20, 0.726)
+    ),
+    url(https://images.unsplash.com/photo-1594310381486-59abdfe96b37?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=egor-myznik-y6M35M_UXtI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 4.8rem 12.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ffe8cc;
+}
+
+.owner-name {
+  display: inline-block;
+  font-size: 1.6rem;
+  background-color: #fff4e6;
+  color: #d9480f;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1.2rem;
+  font-weight: 700;
+  margin: 1.2rem;
+  margin: auto;
+  margin-bottom: 0.8rem;
+}
+
+.bussiness-name {
+  font-size: 7.4rem;
+  margin-bottom: 2.4rem;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+main {
+  padding: 4.8rem 0 0 9.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#video {
+  height: 20rem;
+  justify-self: center;
+  align-self: center;
+}
