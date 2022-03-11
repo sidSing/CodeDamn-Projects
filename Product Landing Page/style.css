@@ -42,6 +42,10 @@
   margin-bottom: 0.8rem;
 }
 
+.hamburger {
+  display: none;
+}
+
 body,
 html {
   font-family: "Ubuntu", sans-serif;
@@ -213,4 +217,39 @@ h2 {
     rgba(9, 146, 105, 0.9),
     rgba(28, 127, 214, 1)
   );
+}
+
+@media (max-width: 90rem) {
+  html,
+  body {
+    font-size: 56.26%;
+  }
+}
+
+@media (max-width: 76rem) {
+  html,
+  body {
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 59rem) {
+  html,
+  body {
+    font-size: 31.25%;
+  }
+}
+
+@media (max-width: 42.5rem) {
+  html,
+  body {
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-link {
+    display: none;
+  }
 }
